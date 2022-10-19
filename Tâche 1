@@ -2,12 +2,13 @@ Q1. Le niveau de documentation des classes est-il approprié par rapport à leur
 
 	Métriques appropriées -->
 		1. CLOC/LOC (DC) (voir le nombre de commentaires par classe pour voir s'il y a assez d'explications)
-		2. Complexité cyclomatique/
+		2. Complexité cyclomatique/WMC
+		3. RFC?
 
 Q2. La conception est-elle bien modulaire ?
 	Métriques appropriées -->
 		1. Lack of Cohesion (LCOM1 ou LCOM2)
-		2. 
+		2. RFC?
 
 Q3. Le code est-il mature ? 
 	Métriques appropriées -->
