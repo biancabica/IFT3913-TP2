@@ -1,3 +1,22 @@
+La tâche 1 est constituée de 4 questions, voici les choix de métriques correspondants ainsi qu'une justification pour chacune d'entre elles:
+
+Q1. Pour répondre à cette question, nous avons décidé d'évaluer deux facteurs à l’aide de deux métriques.
+En premier lieu, nous calculerons la densité des commentaires, DC, par rapport à la documentation du code :
+ceci nous permettra d’identifier la quantité de documentation incluse dans chaque classe.
+Évidemment, celle-ci doit être mise en relation avec la complexité de chaque classe,
+chose qui sera calculée par CC (complexité cyclomatique). Nous avons choisi cette métrique car
+elle donne une vue représentative globale de la complexité de chaque méthode.
+Normalement, plus la classe est complexe, plus il y aura de documentation,
+c’est-à-dire la densité de commentaires sera élevée.
+
+Q2. La réponse à la deuxième interrogation, basée sur la conception modulaire, sera jaugée en fonction de deux métriques,
+la première étant LCOM. Celle-ci nous fournira une représentation de la cohésion des classes Java.
+Cette dernière est un élément principal dans l’évaluation de la modularité qui nous indiquera
+qu’une classe s’occupe que d’une fonctionnalité et possède une responsabilité unique.
+La deuxième métrique sera CBO puisqu’elle nous retournera le nombre de classes auxquelles une classe est
+couplée. Le couplage (CBO) nous donne une indication par rapport aux variables, appels de méthodes et les liens d’héritage :
+nous voulons que la cohésion soit forte et que le couplage soit faible pour affirmer que la conception soit modulaire.
+
 Q3. Afin de déterminer la maturité du code, nous pouvons évaluer deux aspects intégraux de celui-ci,
 soit la stabilité et la fiabilité, tel que vu en cours, à travers deux métriques. Une métrique appropriée pour la stabilité
 du code serait les bugs trouvés, mesurés par la métrique NBAC. La stabilité du code est généralement proportionnelle au niveau
