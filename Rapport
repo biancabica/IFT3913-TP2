@@ -1,0 +1,17 @@
+Q3. Afin de déterminer la maturité du code, nous pouvons évaluer deux aspects intégraux de celui-ci,
+soit la stabilité et la fiabilité, tel que vu en cours, à travers deux métriques. Une métrique appropriée pour la stabilité
+du code serait les bugs trouvés, mesurés par la métrique NBAC. La stabilité du code est généralement proportionnelle au niveau
+de maturité d’un programme. Le nombre de bugs attribuables à une classe identifiera cette stabilité. Quant à la fiabilité,
+la métrique TPC est un bon indicateur de performance du code puisqu'elle nous retourne les tests réussis et la partie du code couverte
+par ceux-ci. Plus la valeur TPC est élevée, plus la fiabilité l’est aussi.
+
+Q4. La dernière question sera jugée en fonction des métriques PMNT et TPC.
+La première nous indiquera quelles classes ne contiennent pas de tests et par conséquent, lesquelles ne peuvent être testées
+automatiquement tel que demandé. La deuxième métrique sera réutilisée de la question 3 car elle nous permet de savoir le niveau de couverture du code.
+La combinaison des deux métriques facilitera la tâche du mainteneur afin de savoir quelles classes sont testées adéquatement
+et ne nécessitent pas de tests supplémentaires.
+
+Mesures des métriques:
+Afin de récolter les données, nous allons utiliser l'outil ckjm pour nous retourner les métriques WMC, CBO et LCOM.
+La métrique NBAC sera évaluée à l'aide de l'outil SonarQube. Les métriques PMNT et TPC sont obtenues directement à l'aide
+de l'éditeur IntelliJ Idea. Finalement, la métrique DC sera implémentée manuellement par nous-mêmes.
