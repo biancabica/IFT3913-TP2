@@ -19,9 +19,9 @@ public class DcMetrique {
         String input;
         while (sc.hasNextLine()) {
             input = sc.nextLine();
-            if (input.contains("/*")) {
+                if ((input.contains("/*") || ((input.contains("*")))) || (input.contains("*/"))) {
                 count++;
-            }
+                }
             if (input.contains("//")) {
                 count++;
             }
@@ -59,13 +59,15 @@ public class DcMetrique {
             var densite = cloc.doubleValue() / loc.doubleValue() ;
             listDensite.add(path +" : " + densite );
         }
+        System.out.println(listDensite);
         return listDensite;
     }
 
 
     public static void main(String[] args) throws IOException {
-        var pathFolder = new File ("C:\\Users\\Chaima\\Desktop\\jfreechart\\src\\main\\java\\org\\jfree\\chart");
+        var pathFolder = new File ("/Users/biancabica/Downloads/jfreechart/src/main/java/org/jfree/chart");
         densite(getPathFiles(pathFolder.toPath()));
+
 
     }
 }
