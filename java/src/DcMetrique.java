@@ -1,9 +1,7 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -63,10 +61,28 @@ public class DcMetrique {
         return listDensite;
     }
 
+    public static File fileCsvDc (File pathFolder) throws IOException {
+        var currentPath = Paths.get("").toAbsolutePath().toString();
+        var csvFile = new File(currentPath,"metriqueDc.csv");
+        var fileWriter = new FileWriter(csvFile);
+        var data = densite(getPathFiles(pathFolder.toPath()));;
+        StringBuilder line = new StringBuilder();
+        for (String datum : data) {
+            line.append(datum);
+            line.append(';');
+            line.append("\n");
+        }
+
+        line.append("\n");
+        fileWriter.write(line.toString());
+        fileWriter.close();
+        return csvFile;
+    }
+
 
     public static void main(String[] args) throws IOException {
-        var pathFolder = new File ("/Users/biancabica/Downloads/jfreechart/src/main/java/org/jfree/chart");
-        densite(getPathFiles(pathFolder.toPath()));
+var pathFolder = new File ("C:\\Users\\Chaima\\Desktop\\jfreechart\\src\\main\\java\\org\\jfree");
+        fileCsvDc(pathFolder);
 
 
     }
