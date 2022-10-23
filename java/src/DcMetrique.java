@@ -24,6 +24,7 @@ public class DcMetrique {
                 count++;
             }
         }
+        sc.close();
         return count;
 
     }
@@ -36,6 +37,7 @@ public class DcMetrique {
             if (!line.isBlank())
                 nbloc++;
         }
+        buffread.close();
         return nbloc;
     }
 
@@ -71,6 +73,7 @@ public class DcMetrique {
             line.append(datum);
             line.append(';');
             line.append("\n");
+
         }
 
         line.append("\n");
