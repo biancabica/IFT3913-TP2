@@ -11,6 +11,6 @@ CBO, LCOM, WMC: Nous avons utilisé un plugin externe de l'éditeur IntelliJ Ide
 
 NBAC: Nous avons utilisé un plugin externe de l'éditeur IntelliJ Idea qui s'appelle SonarLint. Celui-ci peut être téléchargé directement à partir de l'éditeur (File --> Settings --> Plugins --> Marketplace --> SonarLint --> Install). Le plugin calcule NBAC, nous avons récolté la métrique pour chaque fichier et l'avons mise dans un fichier CSV. Dans notre repo il se nomme "metrique_NBAC.csv".
 
-PMNT et TPC: Nous avons utilisé une fonctionnalité d'IntelliJ qui nous permet de récolter ces données dans un fichier HTML. Il suffit de faire un clic-droit sur le dossier "test" et cliquer sur l'option "More run/debug"Run test with coverage". Dans notre repo, le fichier HTML se nomme "metriques_PMNT_TPC.html".
+PMNT et TPC: Nous avons utilisé une fonctionnalité d'IntelliJ qui nous permet de récolter ces données dans un fichier HTML. Il suffit de faire un clic-droit sur le dossier "test" et cliquer sur l'option "More run/debug"Run test with coverage". Dans notre repo, le fichier HTML se nomme "metriques_PMNT_TPC.html". À noter que IntelliJ génère les résultats de tests pour les packages.
 
 DC: L'implémentation de la métrique DC a été faite par nous-mêmes en code Java. Le code exécutable se retrouve dans un executable JAR.
