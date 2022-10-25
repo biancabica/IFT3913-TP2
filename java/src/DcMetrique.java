@@ -59,7 +59,6 @@ public class DcMetrique {
             var densite = cloc.doubleValue() / loc.doubleValue() ;
             listDensite.add(path +" : " + densite );
         }
-        System.out.println(listDensite);
         return listDensite;
     }
 
